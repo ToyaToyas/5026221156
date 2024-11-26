@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('template')
 
 @section('tulisan1', 'Data Pegawai')
 
@@ -11,7 +11,9 @@
 	<p>Cari Nama Pegawai :</p>
 	<form action="/pegawai/cari" method="GET">
 		<input type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
-		<input type="submit" value="CARI" class='btn btn-success'>
+		<button type="submit" class="btn btn-success">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
 	</form>
 	<br/>
  
@@ -31,9 +33,9 @@
                 <td>{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
-                    <a href="/pegawai/edit/{{ $p->pegawai_id }}" class='btn btn-info btn-sm'>edit</a>
+                    <a href="/pegawai/edit/{{ $p->pegawai_id }}" class='btn btn-info btn-sm'><i class="fa-solid fa-trash"></i></a>
                     |
-                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class='btn btn-danger btn-sm'>Hapus</a>
+                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class='btn btn-danger btn-sm'><i class="fa-solid fa-pen-to-square"></i></a>
                 </td>
             </tr>
             @endforeach

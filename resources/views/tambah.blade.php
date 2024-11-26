@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('template')
 
 @section('tulisan1', 'Data Pegawai')
 
