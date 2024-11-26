@@ -16,8 +16,6 @@
     </button>
 	</form>
 	<br/>
- 
-	<div class="table-responsive">
         <table class='table table-striped table-hover'>
             <tr>
                 <th>Nama</th>
@@ -40,7 +38,6 @@
             </tr>
             @endforeach
         </table>
-	</div>
 	<br/>
 	Halaman : {{ $pegawai->currentPage() }} <br/>
 	Jumlah Data : {{ $pegawai->total() }} <br/>

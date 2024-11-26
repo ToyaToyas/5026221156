@@ -11,18 +11,13 @@
   <script src="/jsFontawesome/regular.js"></script>
 </head>
 <body>
-  
-    <div class="container mt-4">
+    <div class="container">
         <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
         <h3>@yield('tulisan1')<h3>
-        
         @yield('link1')
-
         <br/>
 	      <br/>
-
         @yield('konten')
-
     </div>
 
 </body>
