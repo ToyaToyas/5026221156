@@ -33,3 +33,12 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
+
+use App\Http\Controllers\BerasController;
+Route::get('/beras', [BerasController::class, 'indexBeras']);
+Route::get('/beras/tambah', [BerasController::class, 'tambahBeras']);
+Route::post('/beras/storeBeras', [BerasController::class, 'storeBeras']);
+Route::get('/beras/editBeras/{kode}', [BerasController::class, 'editBeras']);
+Route::post('/beras/updateBeras', [BerasController::class, 'updateBeras']);
+Route::get('/beras/hapusBeras/{kode}', [BerasController::class, 'hapusBeras']);
+Route::get('/beras/cari', [BerasController::class, 'cariBeras']);
