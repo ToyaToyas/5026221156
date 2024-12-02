@@ -42,3 +42,6 @@ Route::get('/beras/editBeras/{kode}', [BerasController::class, 'editBeras']);
 Route::post('/beras/updateBeras', [BerasController::class, 'updateBeras']);
 Route::get('/beras/hapusBeras/{kode}', [BerasController::class, 'hapusBeras']);
 Route::get('/beras/cari', [BerasController::class, 'cariBeras']);
+
+use App\Http\Controllers\PageVisitController;
+Route::get('/visit', [PageVisitController::class, 'indexVisitors']);

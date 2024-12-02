@@ -10,6 +10,22 @@
   <script src="/jsFontawesome/solid.js"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="pegawai">Pegawai</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="beras">Beras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Web</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
       <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
       <h3>@yield('tulisan1')</h3>
