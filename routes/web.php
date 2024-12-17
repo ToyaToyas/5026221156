@@ -45,3 +45,8 @@ Route::get('/beras/cari', [BerasController::class, 'cariBeras']);
 
 use App\Http\Controllers\PageVisitController;
 Route::get('/visit', [PageVisitController::class, 'indexVisitors']);
+
+use App\Http\Controllers\EASController;
+Route::get('/nilaikuliah', [EASController::class, 'indexEAS']);
+Route::get('/nilaikuliah/tambah', [EASController::class, 'tambahData']);
+Route::post('/nilaikuliah/storeNilai', [EASController::class, 'storeNilai']);
